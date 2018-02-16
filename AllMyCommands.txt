@@ -1,0 +1,21 @@
+git config —-global user.name “Sprint0”
+mkdir Sprint0
+cd Sprint0
+git init
+git add gettingstarted.txt
+git add distributedgit.txt
+git add gitbranching.txt
+(delete gitbranching.txt manually)
+git checkout gitbranching.txt
+git commit -m “delete and roll back”
+git remote add origin https://github.com/KhadijaHammoud/khadija-sprint0.git
+git push -u origin master
+(enter username and password)
+echo "Git Hub - Sprint 0 individual section for sprint 0 of SE project Khadija Hammoud 37-4867 book Chacon, Scott, and Ben Straub. Pro Git. Apress," >> README.md
+git checkout -b ReadMe
+git add README.md
+git commit -m “read me file"
+git checkout master
+git merge ReadMe
+git add AllMyCommands.txt
+git commit -m “branching and addingg allmycommands”
